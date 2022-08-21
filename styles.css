@@ -87,16 +87,33 @@ img{
 }
 
 .contact-me h1{
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*flex-flow: row nowrap;*/
+    font-family: 'Noto Sans', Arials, sans-serif;
+    margin-top: 18px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
-.contact-me {
-    margin: 0 16px;
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.contact-image-space {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 18px;
+    margin-right: 42px;
+}
+
+.contact-image {
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-bottom: 18px;
 }
