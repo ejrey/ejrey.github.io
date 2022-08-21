@@ -1,0 +1,102 @@
+*{
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    background-color: #414361;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: #ffffff;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Hero Image*/
+
+.hero-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 100%;
+    font-family: 'Noto Sans', Arials, sans-serif;
+
+}
+
+.hero-text h1, h2{
+    text-align: center;
+}
+
+
+.headshot{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/*About Me*/
+
+.about-me{
+    height: 50%;
+    margin: 0 16px;
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-flow: column nowrap;
+}
+.about_header{
+    padding: 14px 0;
+    text-align: center;
+}
+
+/*Projects*/
+
+.project-container{
+    margin: 0 16px;
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-flow: column nowrap;
+}
+
+.two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.project-container h1, h2{
+    padding: 14px 0;
+    text-align: center;
+
+}
+
+.project-container p{
+    padding-bottom: 14px;
+}
+
+.contact-me h1{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*flex-flow: row nowrap;*/
+    text-align: center;
+}
+
+.contact-me {
+    margin: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
