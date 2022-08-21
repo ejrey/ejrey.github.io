@@ -6,7 +6,7 @@
 
 html, body{
     height: 100%;
-    background-color: #414361;
+    background-color: #686868;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -29,9 +29,16 @@ img{
 
 }
 
-.hero-text h1, h2{
+.hero-text h1{
+    margin-top: 8px;
     text-align: center;
 }
+
+.hero-text h2{
+    padding: 4px;
+    font-size: 20px;
+}
+
 
 
 .headshot{
@@ -85,6 +92,9 @@ img{
 .project-container p{
     padding-bottom: 14px;
 }
+
+/*Contact Me*/
+
 
 .contact-me h1{
     font-family: 'Noto Sans', Arials, sans-serif;
