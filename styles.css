@@ -28,7 +28,6 @@ align-items: center;
 flex-flow: column nowrap;
 height: 100%;
 font-family: 'Noto Sans', Arials, sans-serif;
-
 }
 
 .hero-text h1{
@@ -53,7 +52,7 @@ border-radius: 50%;
 /*About Me*/
 
 .about-me{
-height: 50%;
+height: 45%;
 margin: 0 16px;
 font-family: 'Noto Sans', Arials, sans-serif;
 display: flex;
@@ -84,29 +83,64 @@ justify-content: center;
 flex-flow: column nowrap;
 }
 
-.project-container h1, h2{
+.project-container h1{
 padding: 14px 0;
+    /*margin-left: 16px;*/
 text-align: left;
+}
+
+.project-container h2{
+    padding: 14px 0;
+    margin-left: 16px;
+    text-align: left;
 }
 
 .project-container p{
 padding-bottom: 14px;
+    margin-left: 16px;
+    width: auto;
+}
+
+.project {
+    border: 3px solid #50514F;
+    margin-bottom: 10px;
+}
+/* FOR DESKTOP */
+/*.project:hover {*/
+/*    background-color: green;*/
+/*    transition: 2s linear;*/
+/*    */
+/*}*/
+
+.project-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 10px;
+}
+
+.project-container img {
+    padding: 0 20px 0 20px;
 }
 
 /*Contact Me*/
 
 
 .links {
-display: flex;
-padding-top: 16px;
-/*padding-left: 14px;*/
-/*justify-content: center;*/
-/*align-items: center;*/
+    width: 50vw;
+    display: flex;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: space-evenly;
+    /*color: white;*/
+    /*padding-left: 14px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 
 .contact-image-space {
-/*margin-bottom: 18px;*/
-margin-right: 42px;
+    color: white;
 }
 
 .footer {
@@ -176,4 +210,137 @@ align-items: center;
     .project-container p{
         padding-bottom: 14px;
     }
+
+    .links {
+        width: 50vw;
+        display: flex;
+        padding-top: 16px;
+        align-items: center;
+        justify-content: space-evenly;
+        /*color: white;*/
+        /*padding-left: 14px;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .contact-image-space {
+        color: white;
+    }
+
+    .footer {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .hero-text h1{
+        margin-top: 8px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .hero-text h2{
+        padding: 4px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .headshot{
+        width: 250px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .about-me{
+        height: 100%;
+        width: 50%;
+        margin: 0 auto;
+        font-family: 'Noto Sans', Arials, sans-serif;
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+
+    /*.about-me:hover{*/
+    /*    width: 100%;*/
+    /*    transition: 1s ease-in-out;*/
+    /*    transform: rotate(360deg);*/
+    /*}*/
+
+    .about_header{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .project-container{
+        width: 50%;
+        margin: 0 auto;
+        font-family: 'Noto Sans', Arials, sans-serif;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+
+    .two{
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+
+    .project-container h1, h2{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .project-container p{
+        padding-bottom: 14px;
+    }
+
+    .links {
+        width: 50vw;
+        display: flex;
+        padding-top: 16px;
+        align-items: center;
+        justify-content: space-evenly;
+        /*color: white;*/
+        /*padding-left: 14px;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+    }
+
+    .project-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-image-text p {
+        font-size: 12px;
+    }
+
+    /*Contact me*/
+
+    .contact-image-space {
+        color: white;
+    }
+
+    .footer {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
 }
