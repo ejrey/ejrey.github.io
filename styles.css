@@ -11,12 +11,12 @@ html, body{
 }
 
 h1, h2, h3, h4, h5, p {
-color: #ffffff;
+    color: #ffffff;
 }
 
 img{
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -24,39 +24,47 @@ a {
     text-decoration: none;
 }
 
-
 p {
     font-family: 'Mulish', sans-serif;
 }
 
+/*Nav Bar*/
+.navbar {
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 /*Hero Image*/
 .hero-text{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-flow: column nowrap;
-height: 100%;
-font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    height: 100%;
+    font-family: 'Noto Sans', Arials, sans-serif;
 }
 
 .hero-text h1{
-margin-top: 8px;
-text-align: center;
+    margin-top: 8px;
+    text-align: center;
 }
 
 .hero-text h2{
-padding: 4px;
+    padding: 4px;
     margin-top: 3px;
-font-size: 15px;
-text-align: center;
+    font-size: 15px;
+    text-align: center;
 }
 
 .headshot{
-width: 250px;
-height: 250px;
-position: relative;
-overflow: hidden;
-border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 /*Contact Me*/
@@ -67,10 +75,6 @@ border-radius: 50%;
     align-items: center;
     justify-content: space-between;
     /*justify-content: space-evenly; FOR DESKTOP*/
-    /*color: white;*/
-    /*padding-left: 14px;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
 }
 
 .contact-image-space {
@@ -79,41 +83,39 @@ border-radius: 50%;
 
 /*About Me*/
 .about-me{
-height: 45%;
-margin: 0 16px;
-font-family: 'Noto Sans', Arials, sans-serif;
-display: flex;
-justify-content: center;
-/*align-items: center;*/
-flex-flow: column nowrap;
+    height: 45%;
+    margin: 0 16px;
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-flow: column nowrap;
 }
 
 .about_header{
-padding: 14px 0;
-text-align: left;
+    padding: 14px 0;
+    text-align: left;
 }
 
 .about_para {
     font-size: 17px;
 }
 
-
-
 /*Projects*/
 .project-container{
-margin: 0 16px;
-font-family: 'Noto Sans', Arials, sans-serif;
-display: flex;
-justify-content: center;
-/*align-items: center;*/
-flex-flow: column nowrap;
+    margin: 0 16px;
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-flow: column nowrap;
 }
 
 .two{
-display: flex;
-justify-content: center;
-/*align-items: center;*/
-flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-flow: column nowrap;
 }
 
 .project-header {
@@ -121,10 +123,10 @@ flex-flow: column nowrap;
 }
 
 .project-container h1{
-/*padding: 14px 0;*/
+    /*padding: 14px 0;*/
     margin-top: 30%;
-/*margin-left: 16px;*/
-text-align: left;
+    /*margin-left: 16px;*/
+    text-align: left;
 }
 
 .project-container h2{
@@ -199,199 +201,7 @@ text-align: left;
 }
 
 
-
-
 @media screen and (min-width: 768px) {
-    .hero-text h1{
-        margin-top: 8px;
-        font-size: 50px;
-        text-align: center;
-    }
-    .hero-text h2{
-        padding: 4px;
-        font-size: 33px;
-        text-align: center;
-    }
-
-    .headshot{
-        width: 350px;
-        height: 350px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-
-    .about-me{
-        height: 50%;
-        margin: 0 16px;
-        font-family: 'Noto Sans', Arials, sans-serif;
-        display: flex;
-        font-size: 25px;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-    .about_header{
-        padding: 14px 0;
-        text-align: left;
-    }
-
-    .project-container{
-        margin: 0 16px;
-        font-family: 'Noto Sans', Arials, sans-serif;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-
-    .two{
-        display: flex;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-
-    .project-container h1, h2{
-        padding: 14px 0;
-        text-align: left;
-    }
-
-    .project-container p{
-        padding-bottom: 14px;
-    }
-
-    .links {
-        width: 50vw;
-        display: flex;
-        padding-top: 16px;
-        align-items: center;
-        justify-content: space-evenly;
-        /*color: white;*/
-        /*padding-left: 14px;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-    }
-
-    .contact-image-space {
-        color: white;
-    }
-
-    .footer {
-        margin-top: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
 }
 
-@media screen and (min-width: 1024px) {
-    .hero-text h1{
-        margin-top: 8px;
-        font-size: 40px;
-        text-align: center;
-    }
-    .hero-text h2{
-        padding: 4px;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .headshot{
-        width: 250px;
-        height: 250px;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-
-    .about-me{
-        height: 100%;
-        width: 50%;
-        margin: 0 auto;
-        font-family: 'Noto Sans', Arials, sans-serif;
-        display: flex;
-        font-size: 25px;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-
-    /*.about-me:hover{*/
-    /*    width: 100%;*/
-    /*    transition: 1s ease-in-out;*/
-    /*    transform: rotate(360deg);*/
-    /*}*/
-
-    .about_header{
-        padding: 14px 0;
-        text-align: left;
-    }
-
-    .project-container{
-        width: 50%;
-        margin: 0 auto;
-        font-family: 'Noto Sans', Arials, sans-serif;
-        font-size: 25px;
-        display: flex;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-
-    .two{
-        display: flex;
-        justify-content: center;
-        /*align-items: center;*/
-        flex-flow: column nowrap;
-    }
-
-    .project-container h1, h2{
-        padding: 14px 0;
-        text-align: left;
-    }
-
-    .project-container p{
-        padding-bottom: 14px;
-    }
-
-    .links {
-        width: 50vw;
-        display: flex;
-        padding-top: 16px;
-        align-items: center;
-        justify-content: space-evenly;
-        /*color: white;*/
-        /*padding-left: 14px;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-    }
-
-    .project-image-text {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        flex-flow: row-reverse nowrap;
-    }
-
-    .project-image-text p {
-        font-size: 12px;
-    }
-
-    /*Contact me*/
-
-    .contact-image-space {
-        color: white;
-    }
-
-    .footer {
-        margin-top: 18px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-}
