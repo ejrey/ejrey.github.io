@@ -13,14 +13,22 @@ html, body{
 h1, h2, h3, h4, h5, p {
 color: #ffffff;
 }
+
 img{
 max-width: 100%;
 height: auto;
 }
 
+a {
+    color: white;
+}
+
+
+p {
+    font-family: 'Mulish', sans-serif;
+}
 
 /*Hero Image*/
-
 .hero-text{
 display: flex;
 justify-content: center;
@@ -37,7 +45,8 @@ text-align: center;
 
 .hero-text h2{
 padding: 4px;
-font-size: 20px;
+    margin-top: 3px;
+font-size: 15px;
 text-align: center;
 }
 
@@ -49,8 +58,25 @@ overflow: hidden;
 border-radius: 50%;
 }
 
-/*About Me*/
+/*Contact Me*/
+.links {
+    width: 60vw;
+    display: flex;
+    padding-top: 16px;
+    align-items: center;
+    justify-content: space-between;
+    /*justify-content: space-evenly; FOR DESKTOP*/
+    /*color: white;*/
+    /*padding-left: 14px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
 
+.contact-image-space {
+    color: white;
+}
+
+/*About Me*/
 .about-me{
 height: 45%;
 margin: 0 16px;
@@ -60,10 +86,17 @@ justify-content: center;
 /*align-items: center;*/
 flex-flow: column nowrap;
 }
+
 .about_header{
 padding: 14px 0;
 text-align: left;
 }
+
+.about_para {
+    font-size: 17px;
+}
+
+
 
 /*Projects*/
 
@@ -83,21 +116,33 @@ justify-content: center;
 flex-flow: column nowrap;
 }
 
+.project-header {
+    margin-bottom: 14px;
+}
+
 .project-container h1{
-padding: 14px 0;
-    /*margin-left: 16px;*/
+/*padding: 14px 0;*/
+    margin-top: 30%;
+/*margin-left: 16px;*/
 text-align: left;
 }
 
 .project-container h2{
+    color: white;
     padding: 14px 0;
-    margin-left: 16px;
+    margin-left: 13px;
     text-align: left;
 }
 
+
 .project-container p{
-padding-bottom: 14px;
-    margin-left: 16px;
+    /*padding-bottom: 14px;*/
+    margin-bottom: 14px;
+    margin-left: 14px;
+    margin-right: 13px;
+    font-size: 16px;
+    /*margin-right: 5px;*/
+
     width: auto;
 }
 
@@ -120,35 +165,32 @@ padding-bottom: 14px;
     margin-bottom: 10px;
 }
 
+.project-image-text img {
+    width: 90%;
+}
+
+.two img {
+    width: 70%;
+}
+
 .project-container img {
     padding: 0 20px 0 20px;
 }
 
-/*Contact Me*/
-
-
-.links {
-    width: 50vw;
-    display: flex;
-    padding-top: 16px;
-    align-items: center;
-    justify-content: space-evenly;
-    /*color: white;*/
-    /*padding-left: 14px;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-}
-
-.contact-image-space {
-    color: white;
-}
+/* back to top */
 
 .footer {
-margin-top: 18px;
-display: flex;
-justify-content: center;
-align-items: center;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+#myBtn:hover {
+background-color: red; /* Add a dark-grey background on hover */
+}
+
+
 
 @media screen and (min-width: 768px) {
     .hero-text h1{
