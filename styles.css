@@ -6,124 +6,174 @@
 
 html, body{
     height: 100%;
-    background-color: #686868;
+    background-color: #171A21;
+
 }
 
 h1, h2, h3, h4, h5, p {
-    color: #ffffff;
+color: #ffffff;
 }
 img{
-    max-width: 100%;
-    height: auto;
+max-width: 100%;
+height: auto;
 }
+
 
 /*Hero Image*/
 
 .hero-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    height: 100%;
-    font-family: 'Noto Sans', Arials, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column nowrap;
+height: 100%;
+font-family: 'Noto Sans', Arials, sans-serif;
 
 }
 
 .hero-text h1{
-    margin-top: 8px;
-    text-align: center;
+margin-top: 8px;
+text-align: center;
 }
 
 .hero-text h2{
-    padding: 4px;
-    font-size: 20px;
+padding: 4px;
+font-size: 20px;
+text-align: center;
 }
 
-
-
 .headshot{
-    width: 250px;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
+width: 250px;
+height: 250px;
+position: relative;
+overflow: hidden;
+border-radius: 50%;
 }
 
 /*About Me*/
 
 .about-me{
-    height: 50%;
-    margin: 0 16px;
-    font-family: 'Noto Sans', Arials, sans-serif;
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-    flex-flow: column nowrap;
+height: 50%;
+margin: 0 16px;
+font-family: 'Noto Sans', Arials, sans-serif;
+display: flex;
+justify-content: center;
+/*align-items: center;*/
+flex-flow: column nowrap;
 }
 .about_header{
-    padding: 14px 0;
-    text-align: center;
+padding: 14px 0;
+text-align: left;
 }
 
 /*Projects*/
 
 .project-container{
-    margin: 0 16px;
-    font-family: 'Noto Sans', Arials, sans-serif;
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-    flex-flow: column nowrap;
+margin: 0 16px;
+font-family: 'Noto Sans', Arials, sans-serif;
+display: flex;
+justify-content: center;
+/*align-items: center;*/
+flex-flow: column nowrap;
 }
 
 .two{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
+display: flex;
+justify-content: center;
+/*align-items: center;*/
+flex-flow: column nowrap;
 }
 
 .project-container h1, h2{
-    padding: 14px 0;
-    text-align: center;
-
+padding: 14px 0;
+text-align: left;
 }
 
 .project-container p{
-    padding-bottom: 14px;
+padding-bottom: 14px;
 }
 
 /*Contact Me*/
 
 
-.contact-me h1{
-    font-family: 'Noto Sans', Arials, sans-serif;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    text-align: center;
-}
-
 .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+display: flex;
+padding-top: 16px;
+/*padding-left: 14px;*/
+/*justify-content: center;*/
+/*align-items: center;*/
 }
 
 .contact-image-space {
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    margin-bottom: 18px;
-    margin-right: 42px;
+/*margin-bottom: 18px;*/
+margin-right: 42px;
 }
 
-.contact-image {
-    -khtml-user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-    margin-bottom: 18px;
+.footer {
+margin-top: 18px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text h1{
+        margin-top: 8px;
+        font-size: 50px;
+        text-align: center;
+    }
+    .hero-text h2{
+        padding: 4px;
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .headshot{
+        width: 350px;
+        height: 350px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
+    .about-me{
+        height: 50%;
+        margin: 0 16px;
+        font-family: 'Noto Sans', Arials, sans-serif;
+        display: flex;
+        font-size: 25px;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+    .about_header{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .project-container{
+        margin: 0 16px;
+        font-family: 'Noto Sans', Arials, sans-serif;
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+
+    .two{
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        flex-flow: column nowrap;
+    }
+
+    .project-container h1, h2{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .project-container p{
+        padding-bottom: 14px;
+    }
 }
