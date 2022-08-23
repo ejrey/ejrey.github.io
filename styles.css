@@ -2,12 +2,12 @@
     box-sizing: content-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 html, body{
     height: 100%;
     background-color: #171A21;
-
 }
 
 h1, h2, h3, h4, h5, p {
@@ -109,6 +109,7 @@ p {
     justify-content: center;
     /*align-items: center;*/
     flex-flow: column nowrap;
+    gap: 20px;
 }
 
 .two{
@@ -119,11 +120,12 @@ p {
 }
 
 .project-header {
+    margin-top: 10%;
     margin-bottom: 14px;
 }
 
 .project-container h1{
-    margin-top: 20%;
+    /*margin-top: 20%;*/
     /*padding: 14px 0;*/
     /*margin-top: 30%;*/
     /*margin-left: 16px;*/
@@ -152,7 +154,6 @@ p {
 .project {
     border: 3px solid #50514F;
     border-radius: 5px;
-    margin-bottom: 10px;
 }
 /* FOR DESKTOP */
 /*.project:hover {*/
@@ -190,7 +191,7 @@ p {
     align-items: center;
 }
 
-#myBtn {
+.topBtn {
     background-color: #171A21;
     border: none;
     color: white;
@@ -199,38 +200,301 @@ p {
     text-decoration: none;
     font-family: 'Noto Sans', Arials, sans-serif;
     font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 280px) {
+    .headshot{
+        width: 200px;
+        height: 200px;
+    }
+
+    .project-header {
+        margin-top: 35%;
+        margin-bottom: 14px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     /*Hero Image*/
+    .headshot{
+        width: 300px;
+        height: 300px;
+    }
+    .navbar {
+        font-size: 25px;
+    }
+
     .hero-text h1{
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .hero-text h2{
-        font-size: 18px;
+        font-size: 25px;
     }
 
     /*Contact Me*/
     .links {
         justify-content: space-evenly;
+        font-size: 25px;
+    }
+    /*About Me*/
+    .about-me h1{
+        font-size: 40px;
+    }
+
+    .about_header{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .about_para {
+        font-size: 25px;
     }
 
     /*Projects*/
     .project-container h1{
         margin-top: 0%;
+        font-size: 40px;
     }
 
     .project-container h2 {
         margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .project-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-image-text p {
+        font-size: 16px;
     }
 
     .project-image-text img {
-        width: 50%;
+        width: 60%;
     }
 
     .two img {
         width: 30%;
     }
+}
+
+@media screen and (min-width: 912px) {
+    /*Hero Image*/
+    .headshot{
+        width: 375px;
+        height: 375px;
+    }
+    .navbar {
+        font-size: 30px;
+    }
+
+    .hero-text h1{
+        font-size: 60px;
+    }
+
+    .hero-text h2{
+        font-size: 30px;
+    }
+
+    /*Contact Me*/
+    .links {
+        justify-content: space-evenly;
+        font-size: 30px;
+    }
+    /*About Me*/
+    .about-me {
+
+    }
+
+    .about-me h1{
+        font-size: 50px;
+    }
+
+    .about_header{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .about_para {
+        font-size: 30px;
+    }
+
+    /*Projects*/
+    .project-container h1{
+        margin-top: 0%;
+        font-size: 50px;
+    }
+
+    .project-container h2 {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+
+    .project-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-image-text p {
+        font-size: 25px;
+    }
+
+    .project-image-text img {
+        width: 55%;
+    }
+
+    .two img {
+        width: 30%;
+    }
+
+    #myBtn {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /*Hero Image*/
+    .headshot{
+        width: 300px;
+        height: 300px;
+    }
+    .navbar {
+        font-size: 25px;
+    }
+
+    .hero-text h1{
+        font-size: 40px;
+    }
+
+    .hero-text h2{
+        font-size: 25px;
+    }
+
+    /*Contact Me*/
+    .links {
+        width: 30vw;
+        justify-content: space-evenly;
+        font-size: 20px;
+    }
+    /*About Me*/
+    .about-me {
+        margin-top: 39px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .about-me h1{
+        font-size: 40px;
+    }
+
+    .about_header{
+        padding: 14px 0;
+        text-align: left;
+    }
+
+    .about_para {
+        font-size: 30px;
+    }
+
+    /*Projects*/
+    .project-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .project-container h1{
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    .project-container h2 {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+
+    .project-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-image-text p {
+        font-size: 25px;
+    }
+
+    .project-image-text img {
+        width: 55%;
+    }
+
+    .two img {
+        width: 30%;
+    }
+
+    #myBtn {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /*About Me*/
+    .about-me {
+        margin-top: 39px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .about_para {
+        font-size: 25px;
+    }
+    /*Projects*/
+    .project-container {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .project-container h1{
+        margin-top: 10%;
+        font-size: 40px;
+    }
+
+    .project-container h2 {
+        margin-left: 20px;
+        font-size: 30px;
+    }
+
+    .project-image-text {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row-reverse nowrap;
+    }
+
+    .project-image-text p {
+        font-size: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .project-image-text img {
+        width: 30%;
+    }
+
+     /*FOR DESKTOP */
+    .project:hover {
+        background-color: #133C55;
+        transition: 1s ease-in-out;
+    }
+
+    #myBtn {
+        font-size: 25px;
+    }
+
 }
 
