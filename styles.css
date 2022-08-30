@@ -10,7 +10,7 @@ html, body{
     background-color: #171A21;
 }
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, ul {
     color: #ffffff;
 }
 
@@ -24,7 +24,7 @@ a {
     text-decoration: none;
 }
 
-p {
+p, ul {
     font-family: 'Mulish', sans-serif;
 }
 
@@ -35,6 +35,7 @@ p {
     padding-top: 20px;
     align-items: center;
     justify-content: space-evenly;
+    font-size: 13px;
 }
 
 /*Hero Image*/
@@ -83,22 +84,48 @@ p {
 
 /*About Me*/
 .about-me{
-    height: 45%;
+    height: 65%;
     margin: 0 16px;
     font-family: 'Noto Sans', Arials, sans-serif;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     flex-flow: column nowrap;
 }
 
 .about_header{
     padding: 14px 0;
     text-align: left;
+    text-decoration: underline;
 }
 
 .about_para {
     font-size: 17px;
+}
+
+/*Work Experience*/
+.work-experience {
+    height: 50%;
+    margin: 0 16px;
+    font-family: 'Noto Sans', Arials, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.work-experience h1 {
+    margin-bottom: 14px;
+    text-decoration: underline;
+}
+
+.work-experience h3 {
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+
+.work_para {
+    list-style-type: circle;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /*Projects*/
@@ -107,29 +134,14 @@ p {
     font-family: 'Noto Sans', Arials, sans-serif;
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     flex-flow: column nowrap;
     gap: 20px;
 }
 
-.two{
-    display: flex;
-    justify-content: center;
-    /*align-items: center;*/
-    flex-flow: column nowrap;
-}
-
-.project-header {
-    margin-top: 10%;
-    margin-bottom: 14px;
-}
-
-.project-container h1{
-    /*margin-top: 20%;*/
-    /*padding: 14px 0;*/
+.project_header {
     /*margin-top: 30%;*/
-    /*margin-left: 16px;*/
-    text-align: left;
+    margin-bottom: 14px;
+    text-decoration: underline;
 }
 
 .project-container h2{
@@ -139,15 +151,11 @@ p {
     text-align: left;
 }
 
-
 .project-container p{
-    /*padding-bottom: 14px;*/
     margin-bottom: 14px;
     margin-left: 14px;
     margin-right: 13px;
     font-size: 16px;
-    /*margin-right: 5px;*/
-
     width: auto;
 }
 
@@ -155,12 +163,6 @@ p {
     border: 3px solid #50514F;
     border-radius: 5px;
 }
-/* FOR DESKTOP */
-/*.project:hover {*/
-/*    background-color: green;*/
-/*    transition: 2s linear;*/
-/*    */
-/*}*/
 
 .project-image-text {
     display: flex;
@@ -174,16 +176,11 @@ p {
     width: 90%;
 }
 
-.two img {
-    width: 70%;
-}
-
 .project-container img {
     padding: 0 20px 0 20px;
 }
 
 /* back to top */
-
 .footer {
     margin-top: 18px;
     display: flex;
@@ -209,11 +206,26 @@ p {
         height: 200px;
     }
 
-    .project-header {
-        margin-top: 35%;
-        margin-bottom: 14px;
+    .about-me{
+        height: 105%;
+    }
+
+    .work-experience {
+        height: 75%;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .about-me {
+        margin-bottom: 30%;
+    }
+
+    .work-experience {
+        margin-bottom: 20%;
     }
 }
+
 
 @media screen and (min-width: 768px) {
     /*Hero Image*/
@@ -239,6 +251,10 @@ p {
         font-size: 25px;
     }
     /*About Me*/
+    .about-me {
+        height: 60%;
+    }
+
     .about-me h1{
         font-size: 40px;
     }
@@ -252,9 +268,22 @@ p {
         font-size: 25px;
     }
 
+    /*Work Experience*/
+    .work-experience h1 {
+        font-size: 40px;
+    }
+
+    .work-experience h3 {
+        font-size: 25px;
+    }
+
+    .work_para {
+        font-size: 25px;
+    }
+
     /*Projects*/
     .project-container h1{
-        /*margin-top: 0%;*/
+        /*margin-top: 5%;*/
         font-size: 40px;
     }
 
@@ -307,10 +336,6 @@ p {
         font-size: 30px;
     }
     /*About Me*/
-    .about-me {
-
-    }
-
     .about-me h1{
         font-size: 50px;
     }
@@ -321,6 +346,28 @@ p {
     }
 
     .about_para {
+        font-size: 30px;
+    }
+
+    /*Work Experience*/
+    .work-experience {
+        height: 50%;
+        margin: 0 16px;
+        font-family: 'Noto Sans', Arials, sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+    }
+
+    .work-experience h1 {
+        font-size: 50px;
+    }
+
+    .work-experience h3 {
+        font-size: 30px;
+    }
+
+    .work_para {
         font-size: 30px;
     }
 
@@ -355,7 +402,7 @@ p {
     }
 
     #myBtn {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -385,13 +432,14 @@ p {
     }
     /*About Me*/
     .about-me {
-        margin-top: 39px;
+        height: 20%;
+        margin-top: 30%;
         margin-left: 40px;
         margin-right: 40px;
     }
 
     .about-me h1{
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .about_header{
@@ -400,7 +448,29 @@ p {
     }
 
     .about_para {
-        font-size: 30px;
+        font-size: 20px;
+    }
+
+    /*Work Experience*/
+    .work-experience {
+        height: 50%;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .work-experience h1 {
+        margin-bottom: 14px;
+        font-size: 35px;
+    }
+
+    .work-experience h3 {
+        margin-left: 5px;
+        margin-bottom: 8px;
+        font-size: 20px;
+    }
+
+    .work_para {
+        font-size: 20px;
     }
 
     /*Projects*/
@@ -410,13 +480,13 @@ p {
     }
 
     .project-container h1{
-        margin-top: 10%;
-        font-size: 40px;
+        /*margin-top: 30%;*/
+        font-size: 35px;
     }
 
     .project-container h2 {
         margin-left: 20px;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .project-image-text {
@@ -427,7 +497,7 @@ p {
     }
 
     .project-image-text p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .project-image-text img {
@@ -439,13 +509,25 @@ p {
     }
 
     #myBtn {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
+
+@media screen and (min-width: 1280px) {
+    .about-me {
+        height: 40%;
+    }
+
+    .project-image-text img {
+        width: 40%;
+    }
+}
+
 
 @media screen and (min-width: 1440px) {
     /*About Me*/
     .about-me {
+        /*height: 60%;*/
         margin-top: 39px;
         margin-left: 20%;
         margin-right: 20%;
@@ -453,15 +535,30 @@ p {
     .about_para {
         font-size: 25px;
     }
-    /*Projects*/
-    .project-container {
+
+    .navbar {
+        font-size: 20px;
+    }
+
+    /*Work Experience*/
+    .work-experience {
+        /*height: 65%;*/
         margin-left: 20%;
         margin-right: 20%;
     }
 
-    .project-container h1{
-        margin-top: 10%;
-        font-size: 40px;
+    .work-experience h3 {
+        font-size: 25px;
+    }
+
+    .work_para {
+        font-size: 25px;
+    }
+
+    /*Projects*/
+    .project-container {
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .project-container h2 {
