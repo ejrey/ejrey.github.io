@@ -28,9 +28,12 @@ p, ul {
     font-family: 'Mulish', sans-serif;
 }
 
+.navbar, .hero-text, .about-me, .work-experience, .project-container, .topBtn {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /*Nav Bar*/
 .navbar {
-    font-family: 'Noto Sans', Arials, sans-serif;
     display: flex;
     padding-top: 20px;
     align-items: center;
@@ -45,7 +48,6 @@ p, ul {
     align-items: center;
     flex-flow: column nowrap;
     height: 100%;
-    font-family: 'Noto Sans', Arials, sans-serif;
 }
 
 .hero-text h1{
@@ -86,7 +88,6 @@ p, ul {
 .about-me{
     height: 65%;
     margin: 0 16px;
-    font-family: 'Noto Sans', Arials, sans-serif;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -106,7 +107,6 @@ p, ul {
 .work-experience {
     height: 50%;
     margin: 0 16px;
-    font-family: 'Noto Sans', Arials, sans-serif;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -131,7 +131,7 @@ p, ul {
 /*Projects*/
 .project-container{
     margin: 0 16px;
-    font-family: 'Noto Sans', Arials, sans-serif;
+    /*font-family: 'Noto Sans', Arials, sans-serif;*/
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
@@ -195,7 +195,6 @@ p, ul {
     text-align: center;
     padding: 10px 20px;
     text-decoration: none;
-    font-family: 'Noto Sans', Arials, sans-serif;
     font-size: 20px;
     cursor: pointer;
 }
@@ -353,10 +352,6 @@ p, ul {
     .work-experience {
         height: 50%;
         margin: 0 16px;
-        font-family: 'Noto Sans', Arials, sans-serif;
-        display: flex;
-        justify-content: center;
-        flex-flow: column nowrap;
     }
 
     .work-experience h1 {
@@ -436,6 +431,7 @@ p, ul {
         margin-top: 30%;
         margin-left: 40px;
         margin-right: 40px;
+        margin-bottom: 15%;
     }
 
     .about-me h1{
@@ -456,6 +452,7 @@ p, ul {
         height: 50%;
         margin-left: 40px;
         margin-right: 40px;
+        margin-bottom: 5%;
     }
 
     .work-experience h1 {
@@ -516,6 +513,12 @@ p, ul {
 @media screen and (min-width: 1280px) {
     .about-me {
         height: 40%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .work-experience {
+        margin-bottom: 0%;
     }
 
     .project-image-text img {
@@ -528,9 +531,11 @@ p, ul {
     /*About Me*/
     .about-me {
         /*height: 60%;*/
-        margin-top: 39px;
+        margin-top: 0%;
         margin-left: 20%;
         margin-right: 20%;
+        margin-bottom: 3%;
+        /*margin: 39% 20% 3%;*/
     }
     .about_para {
         font-size: 25px;
@@ -542,9 +547,10 @@ p, ul {
 
     /*Work Experience*/
     .work-experience {
-        /*height: 65%;*/
+        /*height: %;*/
         margin-left: 20%;
         margin-right: 20%;
+        margin-bottom: 3%;
     }
 
     .work-experience h3 {
