@@ -172,6 +172,11 @@ p, ul {
     margin-bottom: 10px;
 }
 
+
+.project-one-container p a {
+    color: tan;
+}
+
 .project-image-text img {
     width: 90%;
 }
@@ -531,10 +536,7 @@ p, ul {
     /*About Me*/
     .about-me {
         /*height: 60%;*/
-        margin-top: 0%;
-        margin-left: 20%;
-        margin-right: 20%;
-        margin-bottom: 3%;
+        margin: 0% 20% 3%;
         /*margin: 39% 20% 3%;*/
     }
     .about_para {
@@ -543,6 +545,14 @@ p, ul {
 
     .navbar {
         font-size: 20px;
+    }
+
+    .navbar a:hover {
+        color: tan;
+    }
+
+    .contact-image-space:hover {
+        color: tan;
     }
 
     /*Work Experience*/
@@ -572,6 +582,10 @@ p, ul {
         font-size: 30px;
     }
 
+    .project-container h2 a:hover {
+        color: tan;
+    }
+
     .project-image-text {
         display: flex;
         justify-content: center;
@@ -585,19 +599,24 @@ p, ul {
         margin-right: 40px;
     }
 
-    .project-image-text img {
-        width: 30%;
-    }
+    /*.project-image-text img {*/
+    /*    width: 30%;*/
+    /*}*/
 
      /*FOR DESKTOP */
-    .project:hover {
-        background-color: #133C55;
-        transition: 1s ease-in-out;
-    }
+    /*.project:hover {*/
+    /*    background-color: #133C55;*/
+    /*    transition: 1s ease-in-out;*/
+    /*}*/
 
     #myBtn {
         font-size: 25px;
     }
+
+    .topBtn:hover {
+        color: tan;
+    }
+
 
 }
 
