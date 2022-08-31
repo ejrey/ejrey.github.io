@@ -3,8 +3,8 @@
 <head>
     <title>Eric Reyes | Personal Website</title>
     <meta charset="utf-8">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="script.js"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -41,7 +41,7 @@
 
 </div>
 
-<div class="about-me">
+<div class="about-me" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">
     <h1 class="about_header" id="about">
         About Me
     </h1>
@@ -61,7 +61,7 @@
     </p>
 </div>
 
-<div class="work-experience">
+<div class="work-experience" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">
     <h1 class="work_experience" id="work">
         Work Experience
     </h1>
@@ -73,7 +73,7 @@
     </ul>
 </div>
 
-<div class="project-container">
+<div class="project-container" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">
     <h1 class="project_header" id="projects">Projects</h1>
     <div class="project four">
         <h2><a href="https://github.com/ejrey/StormHacks2022" target="_blank">Icebreaker Bot</a></h2>
@@ -106,11 +106,14 @@
 </div>
 
 
-<div class="footer">
+<div class="footer" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="150" data-aos-offset="0">
     <button onclick="topFunction()" class="topBtn" title="Go to top">Back To Top</button>
 </div>
 
 <script src="https://kit.fontawesome.com/3f1138a919.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script> AOS.init();</script>
 
 </body>
 </html>
