@@ -520,6 +520,11 @@ p, ul {
 /*    }*/
 /*}*/
 
+@media screen and (min-width: 1024px) {
+    .project-image-text img {
+        width: 40%;
+    }
+}
 
 @media screen and (min-width: 1440px) {
     /*About Me*/
@@ -570,10 +575,6 @@ p, ul {
     /*    background-color: #133C55;*/
     /*    transition: 1s ease-in-out;*/
     /*}*/
-
-    .project-image-text img {
-        width: 40%;
-    }
 
     #myBtn {
         font-size: 25px;
