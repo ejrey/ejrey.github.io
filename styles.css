@@ -533,7 +533,7 @@ p, ul {
     /*About Me*/
     .about-me {
         height: 40%;
-        margin: 0% 20% 3%;
+        margin: 0% 20% 5%;
         /*margin: 39% 20% 3%;*/
     }
     .about_para {
@@ -555,7 +555,7 @@ p, ul {
     /*Work Experience*/
     .work-experience {
         height: 40%;
-        margin: 5% 20% 3%;
+        margin: 5% 20% 5%;
     }
 
     .work-experience h3 {
