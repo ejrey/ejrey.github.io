@@ -181,6 +181,7 @@ p, ul {
     width: 90%;
 }
 
+
 .project-container img {
     padding: 0 20px 0 20px;
 }
@@ -569,6 +570,7 @@ p, ul {
     .project-one-container p a:hover {
         color: saddlebrown;
     }
+
 
      /*FOR DESKTOP */
     /*.project:hover {*/
