@@ -177,6 +177,12 @@ p, ul {
     color: tan;
 }
 
+.six p a {
+    color: tan;
+}
+
+
+
 .project-image-text img {
     width: 90%;
 }
@@ -329,6 +335,10 @@ p, ul {
     }
 
     .project-one-container p a:hover {
+        color: saddlebrown;
+    }
+
+    .six p a:hover {
         color: saddlebrown;
     }
 
